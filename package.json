@@ -1,0 +1,9 @@
+{
+  "name": "openship-pilot-demo",
+  "version": "1.0.0",
+  "description": "Isolated demo application for Hermes & Openship deployment pilot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
