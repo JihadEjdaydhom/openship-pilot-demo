@@ -1,7 +1,7 @@
 import http from 'node:http';
 
 const PORT = parseInt(process.env.PORT || '8080', 10);
-const APP_VERSION = process.env.APP_VERSION || '1.0.0';
+const APP_VERSION = process.env.APP_VERSION || '2.0.0';
 
 const server = http.createServer((req, res) => {
   const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
@@ -20,7 +20,7 @@ const server = http.createServer((req, res) => {
 
   res.writeHead(200, { 'Content-Type': 'application/json' });
   res.end(JSON.stringify({
-    message: 'Hello from Hermes and Openship Pilot Demo!',
+    message: 'Hello from Hermes and Openship Pilot Demo (v2)!',
     app: 'openship-pilot-demo',
     version: APP_VERSION,
     timestamp: new Date().toISOString()

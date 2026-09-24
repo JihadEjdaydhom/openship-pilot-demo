@@ -4,5 +4,5 @@ COPY package.json ./
 COPY index.js ./
 EXPOSE 8080
 ENV PORT=8080
-ENV APP_VERSION=1.0.0
+ENV APP_VERSION=2.0.0
 CMD ["node", "index.js"]
